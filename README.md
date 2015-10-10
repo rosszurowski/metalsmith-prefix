@@ -1,6 +1,6 @@
 # metalsmith-prefix
 
-A metalsmith plugin to prefix internal URLs on your site. Helpful for deploying to nested urls (like example.com/blog) while developing locally.
+A metalsmith plugin to prefix internal URLs on your site. Helpful for deploying to nested urls (like example.com/blog) while developing locally. Written because [metalsmith-prefixoid](https://github.com/evoja/metalsmith-prefixoid) wasn't working for me.
 
 It rewrites all absolute internal URLs to use this prefix. So references to `http://example.com` or `path/to/url` wouldn't be rewritten, but `/path/to/url` would.
 
@@ -30,8 +30,9 @@ Or by passing in options
 {
   "plugins": {
     "metalsmith-prefix": {
-    	prefix: "blog",
-    	selector: "a, img, link, script"
+    	"prefix": "blog",
+    	"selector": "a, img, link, script"
+  	}
   }
 }
 ```
