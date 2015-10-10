@@ -2,7 +2,7 @@
   "name": "metalsmith-prefix",
   "version": "1.0.1",
   "description": "A metalsmith plugin to prefix internal URLs",
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "assert-dir-equal": "^1.0.1",
     "cheerio": "^0.19.0",
