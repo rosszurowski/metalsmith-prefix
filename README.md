@@ -2,7 +2,21 @@
 
 A metalsmith plugin to prefix internal URLs on your site. Helpful for deploying to nested urls (like example.com/blog) while developing locally. Written because [metalsmith-prefixoid](https://github.com/evoja/metalsmith-prefixoid) wasn't working for me.
 
-It rewrites all absolute internal URLs to use this prefix. So references to `http://example.com` or `path/to/url` wouldn't be rewritten, but `/path/to/url` would.
+It rewrites all absolute internal URLs to use this prefix, but no external or relative ones. So the rendered html
+
+```html
+<a href="http://example.com"></a>
+<a href="path/to/url"></a>
+<a href="/path/to/url"></a>
+```
+
+Would become this when prefixed with 'prefix'
+
+```html
+<a href="http://example.com"></a>
+<a href="path/to/url"></a>
+<a href="/prefix/path/to/url"></a>
+```
 
 ## Installation
 
