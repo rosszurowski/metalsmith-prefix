@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-prefix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A metalsmith plugin to prefix internal URLs",
   "main": "lib/index.js",
   "dependencies": {
