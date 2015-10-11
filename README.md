@@ -5,17 +5,19 @@ A metalsmith plugin to prefix internal URLs on your site. Helpful for deploying 
 It rewrites all absolute internal URLs to use this prefix, but no external or relative ones. So the rendered html
 
 ```html
+<a href="/path/a"></a>
+<a href="/path/b/"></a>
 <a href="http://example.com"></a>
 <a href="path/to/url"></a>
-<a href="/path/to/url"></a>
 ```
 
-Would become this when prefixed with 'prefix'
+Would become this when prefixed with `prefix`
 
 ```html
+<a href="/prefix/path/a"></a>
+<a href="/prefix/path/b/"></a>
 <a href="http://example.com"></a>
 <a href="path/to/url"></a>
-<a href="/prefix/path/to/url"></a>
 ```
 
 ## Installation
