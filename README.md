@@ -22,6 +22,8 @@ Would become this when prefixed with `prefix`
 
 ## Installation
 
+[![NPM](https://nodei.co/npm/metalsmith-prefix.png)](https://www.npmjs.com/package/metalsmith-prefix)
+
 ```bash
 npm install metalsmith-prefix
 ```
